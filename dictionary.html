@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dictionary SPA Lab</h1>
+  </header>
+
+  <main>
+    <!-- Enter word here -->
+    <form id="form" role="search" aria-label="Dictionary search form">
+      <input type="text" id="input" name="input" placeholder="Enter word here">
+      <button type="submit" aria-label="Search definition">Search</button>
+    </form>
+
+    <!-- Display definitions here -->
+    <section id="results" aria-live="polite">
+      <h2>Results</h2>
+      <p id="definition">Please search a word.</p>
+      <audio id="audio" controls style="display:none;" aria-label="Pronunciation here"></audio>
+    </section>
+  </main>
+
+  <!-- Connect our JS -->
+  <script src="dictionary.js"></script>
+</body>
+</html>
